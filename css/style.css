@@ -1,15 +1,30 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: blue;
+}
 main{
-    width: 1200px;
+    width: 900px;
     max-width: 90%;
     margin: 0 auto;
     
 }
-.top-players, .blogs{
+section{
+    background-color: white;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 10px;
+}
+.section-title{
+    color: violet;
+}
+.top-players, .blogs, .courses{
     display: grid;
     grid-gap: 30px;
     place-items: center;
 }
-.top-players{
+.top-players, .courses{
     grid-template-columns: repeat(3, 1fr);
 }
 .blogs{
@@ -18,6 +33,13 @@ main{
 .player, .blog{
     display: flex;
     align-items: center;
+}
+.course-info{
+    display: flex;
+}
+.courses img{
+    
+    width: 200px;
 }
 .player img{
     height: 50px;
@@ -28,7 +50,7 @@ main{
     margin-right: 20px;
 }
 @media (max-width:992px){
-    .top-players{
+    .top-players, .courses{
         grid-template-columns: repeat(2, 1fr);
     }
     .blogs{
@@ -36,7 +58,7 @@ main{
     }
 }
 @media (max-width:688px){
-    .top-players{
+    .top-players, .courses{
         grid-template-columns: repeat(1, 1fr);
     }
     .blog{
