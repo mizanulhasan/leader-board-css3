@@ -43,3 +43,11 @@ main{
         display: block;
     }
 }
+.filled{
+    color: gold;
+    font-size: .8em;
+}
+.unfilled{
+    color: lightgray;
+    font-size: .8em;
+}
